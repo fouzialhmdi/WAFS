@@ -1,0 +1,537 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Pixellari";
+    src: url(Fonts/Pixellari.ttf);
+    font-weight: normal;
+    font-size: normal;
+}
+
+body {
+    font-family: "Pixellari";
+    background: linear-gradient(45deg,  #ff4373, #6e9cd0);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+body > div {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+section {
+    width: 100vw;
+    height: 100vh;
+    flex: 0 0 100%;
+}
+
+ h1 {
+    color: #6e6cff;
+    font-size: xx-large;
+
+}
+
+h2 {
+    color: #ff004d;
+    text-align: center;
+}
+
+section div {
+    box-sizing: border-box;
+}
+.hobbies, .game, .huisdier {
+    background: linear-gradient(45deg,  #f990c4, purple);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.interesses, .band, .leerdoelen {
+    background: linear-gradient(45deg,  #f990c4, yellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}    
+ .pixel-hobby {
+    width: 1em;
+    height: 1em;
+    
+    box-shadow:
+    1em 0 0 blue,
+    2em 0 0 blue,
+    3em 0 0 black,
+    4em 0 0 black,
+    5em 0 0 black,
+    6em 0 0 black,
+    7em 0 0 black,
+    8em 0 0 red,
+    9em 0 0 red,
+
+    0em 1em 0 blue,
+    1em 1em 0 black,
+    2em 1em 0 blue,
+    3em 1em 0 black,
+    4em 1em 0 black,
+    5em 1em 0 black,
+    6em 1em 0 black,
+    7em 1em 0 black,
+    8em 1em 0 red,
+    9em 1em 0 black,
+    10em 1em 0 red,
+
+    1em 2em 0 blue,
+    2em 2em 0 blue,
+    3em 2em 0 black,
+    4em 2em 0 black,
+    5em 2em 0 black,
+    6em 2em 0 black,
+    7em 2em 0 black,
+    8em 2em 0 red,
+
+    9em 2em 0 red;
+
+    margin-right: 10em;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+.pixel-interesse{
+    width: 1.2em;
+    height: 1.2em;
+   
+    box-shadow: 
+    1em 0 0 red, 
+    2em 0 0 red,
+    3em 0 0 transparent,
+    4em 0 0 red,
+    5em 0 0 red,
+
+    0em 1em 0 red,
+    1em 1em 0 red,
+    2em 1em 0 red, 
+    3em 1em 0 red,
+    4em 1em 0 red,
+    5em 1em 0 red,
+    6em 1em 0 red,
+
+    0em 2em 0 red,
+    1em 2em 0 red,
+    2em 2em 0 red, 
+    3em 2em 0 red,
+    4em 2em 0 red,
+    5em 2em 0 red,
+    6em 2em 0 red,
+
+    1em 3em 0 red,
+    2em 3em 0 red, 
+    3em 3em 0 red,
+    4em 3em 0 red, 
+    5em 3em 0 red,
+
+    2em 4em 0 red,
+    3em 4em 0 red,
+    4em 4em 0 red,
+
+    3em 5em 0 red;
+
+    margin-top: .1em;
+    margin-bottom: 2.5em;
+    margin-right: 4.5em;
+    transform: scale(.80);
+}
+
+
+.hobbies ul, .huisdier {
+    font-family: "Pixellari";
+    color:yellowgreen;
+
+}
+
+.interesses ul, ol {
+    font-family: "Pixellari";
+    margin-top: 2em;
+    color: purple;
+}
+ol li {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: .2em;
+}
+
+.pixel-game {
+    width: 1em;
+    height: 1em;
+
+    box-shadow:
+    2em 0 0 black,
+    3em 0 0 black,
+    4em 0 0 black,
+    5em 0 0 black,
+    6em 0 0 black,
+    7em 0 0 black,
+
+   1em 1em 0 black,
+   2em 1em 0 black,
+   3em 1em 0 olive, 
+   4em 1em 0 olive,
+   5em 1em 0 olive,
+   6em 1em 0 olive,
+   7em 1em 0 black,
+   8em 1em 0 black,
+
+   0em 2em 0 black,
+   1em 2em 0 black,
+   2em 2em 0 olive,
+   3em 2em 0 olive,
+   4em 2em 0 olive, 
+   5em 2em 0 olive,
+   6em 2em 0 olive, 
+   7em 2em 0 olive, 
+   8em 2em 0 black, 
+   9em 2em 0 black,
+
+   -1em 3em 0 black,
+   0em 3em 0 black,
+   1em 3em 0 olive,
+   2em 3em 0 olive, 
+   3em 3em 0 olive,
+   4em 3em 0 olive,
+   5em 3em 0 olive, 
+   6em 3em 0 olive, 
+   7em 3em 0 olive,
+   8em 3em 0 olive,
+   9em 3em 0 black,
+   10em 3em 0 black,
+
+   -1em 4em 0 black,
+   0em 4em 0 olive,
+   1em 4em 0 black,
+   2em 4em 0 yellow, 
+   3em 4em 0 yellow,
+   4em 4em 0 yellow, 
+   5em 4em 0 yellow, 
+   6em 4em 0 yellow, 
+   7em 4em 0 yellow,
+   8em 4em 0 black,
+   9em 4em 0 olive,
+   10em 4em 0 black,
+
+   -1em 5em 0 black,
+   0em 5em 0 black,
+   1em 5em 0 yellow,
+   2em 5em 0 yellow,
+   3em 5em 0 yellow,
+   4em 5em 0 yellow,
+   5em 5em 0 yellow, 
+   6em 5em 0 yellow,
+   7em 5em 0 yellow,
+   8em 5em 0 yellow,
+   9em 5em 0 black,
+   10em 5em 0 black,
+
+   -2em 6em 0 black,
+   -1em 6em 0 black,
+   0em 6em 0 yellow,
+   1em 6em 0 yellow,
+   2em 6em 0 black,
+   3em 6em 0 yellow, 
+   4em 6em 0 yellow,
+   5em 6em 0 yellow,
+   6em 6em 0 yellow,
+   7em 6em 0 black,
+   8em 6em 0 yellow,
+   9em 6em 0 yellow,
+   10em 6em 0 black,
+   11em 6em 0 black,
+
+   -4em 7em 0 black,
+   -3em 7em 0 black,
+   -2em 7em 0 black,
+   -1em 7em 0 black,
+   0em 7em 0 yellow,
+   1em 7em 0 black,
+   2em 7em 0 yellow,
+   3em 7em 0 yellow,
+   4em 7em 0 yellow,
+   5em 7em 0 yellow,
+   6em 7em 0 black,
+   7em 7em 0 black,
+   8em 7em 0 black,
+   9em 7em 0 yellow, 
+   10em 7em 0 black,
+   11em 7em 0 black,
+   12em 7em 0 black,
+   13em 7em 0 black,
+
+   -4em 8em 0 black,
+   -3em 8em 0 #FFE2C6, 
+   -2em 8em 0 #FFE2C6, 
+   -1em 8em 0 black,
+   0em 8em 0 black,
+   1em 8em 0 yellow,
+   2em 8em 0 yellow,
+   3em 8em 0 yellow, 
+   4em 8em 0 yellow,
+   5em 8em 0 black,
+   6em 8em 0 black,
+   7em 8em 0 #FFE2C6,
+   8em 8em 0 black,
+   9em 8em 0 yellow,
+   10em 8em 0 black,
+   11em 8em 0 #FFE2C6,
+   12em 8em 0 #FFE2C6,
+   13em 8em 0 black,
+
+   -3em 9em 0 black,
+   -2em 9em 0 black,
+   -1em 9em 0 black,
+   0em 9em 0 black,
+   1em 9em 0 yellow,
+   2em 9em 0 yellow,
+   3em 9em 0 black, 
+   4em 9em 0 black,
+   5em 9em 0 black,
+   6em 9em 0 #FFE2C6,
+   7em 9em 0 #FFE2C6,
+   8em 9em 0 black,
+   9em 9em 0 yellow,
+   10em 9em 0 black,
+   11em 9em 0 black,
+   12em 9em 0 black,
+
+   -2em 10em 0 black,
+   -1em 10em 0 yellow,
+   0em 10em 0 black,
+   1em 10em 0 black,
+   2em 10em 0 black, 
+   3em 10em 0 black,
+   4em 10em 0 black,
+   5em 10em 0 #FFE2C6,
+   6em 10em 0 black,
+   7em 10em 0 black,
+   8em 10em 0 black,
+   9em 10em 0 black,
+   10em 10em 0 yellow,
+   11em 10em 0 black,
+
+   -2em 11em 0 black,
+   -1em 11em 0 yellow,
+   0em 11em 0 black,
+   1em 11em 0 white,
+   2em 11em 0 black,
+   3em 11em 0 black,
+   4em 11em 0 #FFE2C6,
+   5em 11em 0 #FFE2C6,
+   6em 11em 0 black,
+   7em 11em 0 black,
+   8em 11em 0 white,
+   9em 11em 0 black,
+   10em 11em 0 yellow,
+   11em 11em 0 black,
+
+   -2em 12em 0 black,
+   -1em 12em 0 black,
+   0em 12em 0 black,
+   1em 12em 0 #FFE2C6,
+   2em 12em 0 black,
+   3em 12em 0 white,
+   4em 12em 0 #FFE2C6,
+   5em 12em 0 #FFE2C6,
+   6em 12em 0 white,
+   7em 12em 0 black,
+   8em 12em 0 #FFE2C6,
+   9em 12em 0 black,
+   10em 12em 0 black,
+   11em 12em 0 black,
+
+   -1em 13em 0 black,
+   0em 13em 0 black,
+   1em 13em 0 black,
+   2em 13em 0 #FFE2C6,
+   3em 13em 0 #FFE2C6,
+   4em 13em 0 #FFE2C6,
+   5em 13em 0 #FFE2C6,
+   6em 13em 0 #FFE2C6,
+   7em 13em 0 #FFE2C6,
+   8em 13em 0 black,
+   9em 13em 0 black,
+   10em 13em 0 black,
+
+   0em 14em 0 black, 
+   1em 14em 0 black, 
+   2em 14em 0 black,
+   3em 14em 0 black,
+   4em 14em 0 black,
+   5em 14em 0 black,
+   6em 14em 0 black,
+   7em 14em 0 black,
+   8em 14em 0 black,
+   9em 14em 0 black,
+
+   -1em 15em 0 black, 
+   0em 15em 0 #C1E1C1,
+   1em 15em 0 black,
+   2em 15em 0 olive,
+   3em 15em 0 olive,
+   4em 15em 0 olive,
+   5em 15em 0 olive,
+   6em 15em 0 olive,
+   7em 15em 0 olive, 
+   8em 15em 0 black,
+   9em 15em 0 #C1E1C1, 
+   10em 15em 0 black,
+
+   -2em 16em 0 black,
+  -1em 16em 0 #C1E1C1, 
+  0em 16em 0 #C1E1C1, 
+  1em 16em 0 black,
+  2em 16em 0 olive,
+  3em 16em 0 olive,
+  4em 16em 0 olive,
+  5em 16em 0 olive,
+  6em 16em 0 olive,
+  7em 16em 0 olive, 
+  8em 16em 0 black,
+  9em 16em 0 #C1E1C1, 
+  10em 16em 0 #C1E1C1, 
+  11em 16em 0 black,
+
+  -3em 17em 0 black,
+  -2em 17em 0 #FFE2C6,
+  -1em 17em 0 #FFE2C6, 
+  0em 17em 0 black, 
+  1em 17em 0 black,
+  2em 17em 0 olive,
+  3em 17em 0 olive, 
+  4em 17em 0 olive,
+  5em 17em 0 olive,
+  6em 17em 0 olive,
+  7em 17em 0 olive,
+  8em 17em 0 black,
+  9em 17em 0 black,
+  10em 17em 0 #FFE2C6,
+  11em 17em 0 #FFE2C6,
+  12em 17em 0 black,
+
+  -3em 18em 0 black,
+  -2em 18em 0 black,
+  -1em 18em 0 #FFE2C6,
+  0em 18em 0 black,
+  1em 18em 0 olive,
+  2em 18em 0 black,
+  3em 18em 0 black,
+  4em 18em 0 goldenrod,
+  5em 18em 0 goldenrod,
+  6em 18em 0 black,
+  7em 18em 0 black,
+  8em 18em 0 olive, 
+  9em 18em 0 black,
+  10em 18em 0 #FFE2C6,
+  11em 18em 0 black,
+  12em 18em 0 black,
+
+  -2em 19em 0 black,
+  -1em 19em 0 black,
+  0em 19em 0 black, 
+  1em 19em 0 olive,
+  2em 19em 0 olive,
+  3em 19em 0 black,
+  4em 19em 0 goldenrod,
+  5em 19em 0 goldenrod,
+  6em 19em 0 black,
+  7em 19em 0 olive,
+  8em 19em 0 olive,
+  9em 19em 0 black,
+  10em 19em 0 black,
+  11em 19em 0 black,
+
+  0em 20em 0 black,
+  1em 20em 0 black,
+  2em 20em 0 olive,
+  3em 20em 0 olive,
+  4em 20em 0 olive,
+  5em 20em 0 olive,
+  6em 20em 0 olive,
+  7em 20em 0 olive,
+  8em 20em 0 black,
+  9em 20em 0 black,
+
+  -1em 21em 0 black,
+  0em 21em 0 brown,
+  1em 21em 0 brown,
+  2em 21em 0 brown,
+  3em 21em 0 black,
+  4em 21em 0 black,
+  5em 21em 0 black,
+  6em 21em 0 black,
+  7em 21em 0 brown,
+  8em 21em 0 brown, 
+  9em 21em 0 brown, 
+  10em 21em 0 black,
+
+-1em 22em 0 black,
+0em 22em 0 brown,
+1em 22em 0 brown,
+2em 22em 0 black,
+3em 22em 0 black, 
+4em 22em 0 transparent,
+5em 22em 0 transparent, 
+6em 22em 0 black,
+7em 22em 0 black,
+8em 22em 0 brown,
+9em 22em 0 brown,
+10em 22em 0 black,
+
+0em 23em 0 black,
+1em 23em 0  black,
+2em 23em 0 black, 
+3em 23em 0 transparent,
+4em 23em 0 transparent, 
+5em 23em 0 transparent,
+6em 23em 0 transparent,
+7em 23em 0 black,
+8em 23em 0 black,
+9em 23em 0 black;
+
+margin-right: 4em;
+margin-top: 1em;
+transform: scale(.50);
+}
+
+.link  {
+    list-style: none;
+    margin: 1em;
+
+}
+
+.link-band {
+    list-style: none;
+    margin-top: 12em;
+}
+
+img {
+    max-width: 50vw;
+    height: auto;
+    margin: 1em;
+    border: solid;
+    border-color: #DE3163;
+}
+
+/* Bron ChatGPT: 
+Prompt: "De pixelart game verschijnt nu voor de link naar favoriete band, hoe los ik dat op?"
+Pixel art met box-shadow geleerd van Sanne
+Tip gekregen van Vasillis om mbv flexbox de containers naast elkaar te zetten zodat ik horizontaal kan scrollen met overflow
+Tip van Sanne om de bezoeker horizontaal door de website te laten scrollen met anchor-links en scroll-behavior: smooth
+Bron Pixel art met Box-shadow en de grootte aanpassen met transform property ook hier vandaan: https://css-tricks.com/fun-times-css-pixel-art/
+/*
